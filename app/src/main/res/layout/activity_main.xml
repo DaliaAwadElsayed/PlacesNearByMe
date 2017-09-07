@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e2b9b"
+    tools:context="com.example.dalia.placesnearbyme.MainActivity">
+
+    <ListView
+        android:id="@+id/ls"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextsearchid"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="4dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Nearby Places"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/editTextsearchid"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:inputType="textPersonName"
+        android:saveEnabled="true"
+        android:scrollHorizontally="true"
+
+
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textColor="#0e2b9b"
+        android:textColorHint="#0e2b9b"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="28dp"
+        android:layout_alignLeft="@+id/editTextsearchid"
+        android:layout_alignStart="@+id/editTextsearchid"
+        android:layout_alignTop="@+id/editTextsearchid"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:src="@drawable/icon" />
+
+</RelativeLayout>

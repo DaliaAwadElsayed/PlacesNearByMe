@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e2b9b">
+
+    <ImageView
+        android:id="@+id/imagerowid"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/searchplaces" />
+
+    <TextView
+        android:id="@+id/textViewnamerowid"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imagerowid"
+        android:layout_toRightOf="@+id/imagerowid"
+        android:backgroundTint="#FFFDC750"
+        android:text="name"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewaddressid"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textViewnamerowid"
+        android:layout_alignStart="@+id/textViewnamerowid"
+        android:layout_below="@+id/textViewnamerowid"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#FFFDC750"
+        android:text="address"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/imgteleid"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/textViewnamerowid"
+        android:layout_toRightOf="@+id/textViewnamerowid"
+        android:src="@drawable/call" />
+
+    <ImageView
+        android:id="@+id/imggoogleid"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textViewaddressid"
+        android:layout_alignLeft="@+id/imgteleid"
+        android:layout_alignStart="@+id/imgteleid"
+        android:src="@drawable/google" />
+
+</RelativeLayout>
